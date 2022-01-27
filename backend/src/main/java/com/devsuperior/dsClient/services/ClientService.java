@@ -44,7 +44,7 @@ public class ClientService {
 	public ClientDTO insert(ClientDTO dto) {
 		Client entity = new Client();
 		entity.setName(dto.getName());
-		entity.setCpf(dto.getName());
+		entity.setCpf(dto.getCpf());
 		entity.setIncome(dto.getIncome());
 		entity.setBirthDate(dto.getBirthDate());
 		entity.setChildren(dto.getChildren());
