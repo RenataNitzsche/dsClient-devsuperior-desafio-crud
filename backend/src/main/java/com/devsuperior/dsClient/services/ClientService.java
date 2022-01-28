@@ -58,7 +58,7 @@ public class ClientService {
 		try {
 		Client entity = repository.getOne(id);
 		entity.setName(dto.getName());
-		entity.setCpf(dto.getName());
+		entity.setCpf(dto.getCpf());
 		entity.setIncome(dto.getIncome());
 		entity.setBirthDate(dto.getBirthDate());
 		entity.setChildren(dto.getChildren());
